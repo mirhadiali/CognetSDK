@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B08157A2DFF3F2100FF6B92 /* NFCPassportReader in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0815792DFF3F2100FF6B92 /* NFCPassportReader */; };
+		1B08395C2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */; };
+		1B08395D2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B083CCF2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */; };
+		1B083CD02DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B083CD12DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */; };
+		1B083CD22DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B08085B2DFF382600FF6B92 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B083CD02DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Embed Frameworks */,
+				1B083CD22DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Embed Frameworks */,
+				1B08395D2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MediaPipeTasksCommon.xcframework; path = Pods/MediaPipeTasksCommon/frameworks/MediaPipeTasksCommon.xcframework; sourceTree = "<group>"; };
+		1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MediaPipeTasksVision.xcframework; path = Pods/MediaPipeTasksVision/frameworks/MediaPipeTasksVision.xcframework; sourceTree = "<group>"; };
+		1BC7B5E42DFA0BF3004E93CE /* CognetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CognetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55E8863AA7F07A538A3DE4B /* Pods-CognetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognetSDK.release.xcconfig"; path = "Target Support Files/Pods-CognetSDK/Pods-CognetSDK.release.xcconfig"; sourceTree = "<group>"; };
+		EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CognetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAF28369957D8CF6243AAB8 /* Pods-CognetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognetSDK.debug.xcconfig"; path = "Target Support Files/Pods-CognetSDK/Pods-CognetSDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1BC7B5EB2DFA0BF3004E93CE /* Exceptions for "CognetSDK" folder in "CognetSDK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			publicHeaders = (
+				CognetSDK.h,
+			);
+			target = 1BC7B5E32DFA0BF3004E93CE /* CognetSDK */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		1B083CE02DFF582900FF6B92 /* Exceptions for "CognetSDK" folder in "Embed Frameworks" phase from "CognetSDK" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				OpenSSL.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = 1B08085B2DFF382600FF6B92 /* Embed Frameworks */;
+			membershipExceptions = (
+				OpenSSL.framework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1BC7B5E62DFA0BF3004E93CE /* CognetSDK */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1BC7B5EB2DFA0BF3004E93CE /* Exceptions for "CognetSDK" folder in "CognetSDK" target */,
+				1B083CE02DFF582900FF6B92 /* Exceptions for "CognetSDK" folder in "Embed Frameworks" phase from "CognetSDK" target */,
+			);
+			path = CognetSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BC7B5E12DFA0BF3004E93CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B08157A2DFF3F2100FF6B92 /* NFCPassportReader in Frameworks */,
+				1B083CCF2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Frameworks */,
+				1B083CD12DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Frameworks */,
+				1B08395C2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EEF96D9064AE98DE9D04C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */,
+				1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */,
+				EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BC7B5DA2DFA0BF3004E93CE = {
+			isa = PBXGroup;
+			children = (
+				1BC7B5E62DFA0BF3004E93CE /* CognetSDK */,
+				1BC7B5E52DFA0BF3004E93CE /* Products */,
+				FD0B26E43E17C08439560977 /* Pods */,
+				0EEF96D9064AE98DE9D04C7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BC7B5E52DFA0BF3004E93CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BC7B5E42DFA0BF3004E93CE /* CognetSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD0B26E43E17C08439560977 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBAF28369957D8CF6243AAB8 /* Pods-CognetSDK.debug.xcconfig */,
+				A55E8863AA7F07A538A3DE4B /* Pods-CognetSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC7B5DF2DFA0BF3004E93CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BC7B5E32DFA0BF3004E93CE /* CognetSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC7B5EC2DFA0BF3004E93CE /* Build configuration list for PBXNativeTarget "CognetSDK" */;
+			buildPhases = (
+				79E3107784967CBBAE23FA62 /* [CP] Check Pods Manifest.lock */,
+				1BC7B5DF2DFA0BF3004E93CE /* Headers */,
+				1BC7B5E02DFA0BF3004E93CE /* Sources */,
+				1BC7B5E12DFA0BF3004E93CE /* Frameworks */,
+				1BC7B5E22DFA0BF3004E93CE /* Resources */,
+				1B08085B2DFF382600FF6B92 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1BC7B5E62DFA0BF3004E93CE /* CognetSDK */,
+			);
+			name = CognetSDK;
+			productName = CognetSDK;
+			productReference = 1BC7B5E42DFA0BF3004E93CE /* CognetSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BC7B5DB2DFA0BF3004E93CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					1BC7B5E32DFA0BF3004E93CE = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 1BC7B5DE2DFA0BF3004E93CE /* Build configuration list for PBXProject "CognetSDK" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BC7B5DA2DFA0BF3004E93CE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1B0815782DFF3F2100FF6B92 /* XCRemoteSwiftPackageReference "NFCPassportReader" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1BC7B5E52DFA0BF3004E93CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BC7B5E32DFA0BF3004E93CE /* CognetSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BC7B5E22DFA0BF3004E93CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79E3107784967CBBAE23FA62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CognetSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BC7B5E02DFA0BF3004E93CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BC7B5ED2DFA0BF3004E93CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBAF28369957D8CF6243AAB8 /* Pods-CognetSDK.debug.xcconfig */;
+			buildSettings = {
+				BASE_URL = "https://kycdbd.cognetlabs.org";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = CognetSDK/Assets.xcassets;
+				DEVELOPMENT_TEAM = 5WNLNTYVJ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/MediaPipeTasksCommon/frameworks\"",
+					"\"${PODS_ROOT}/MediaPipeTasksVision/frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/MediaPipeTasksCommon\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/MediaPipeTasksVision\"",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)/CognetSDK",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CognetSDK/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to scan your passport chip.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires camera access";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to save your Digital ID to the photo library.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods",
+					"$(inherited)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognet.sdk.CognetSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BC7B5EE2DFA0BF3004E93CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55E8863AA7F07A538A3DE4B /* Pods-CognetSDK.release.xcconfig */;
+			buildSettings = {
+				BASE_URL = "https://kycdbd.cognetlabs.org";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = CognetSDK/Assets.xcassets;
+				DEVELOPMENT_TEAM = 5WNLNTYVJ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/MediaPipeTasksCommon/frameworks\"",
+					"\"${PODS_ROOT}/MediaPipeTasksVision/frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/MediaPipeTasksCommon\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/MediaPipeTasksVision\"",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)/CognetSDK",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CognetSDK/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to scan your passport chip.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires camera access";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to save your Digital ID to the photo library.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods",
+					"$(inherited)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-Xfrontend -disable-availability-checking";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognet.sdk.CognetSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BC7B5EF2DFA0BF3004E93CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BC7B5F02DFA0BF3004E93CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BC7B5DE2DFA0BF3004E93CE /* Build configuration list for PBXProject "CognetSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC7B5EF2DFA0BF3004E93CE /* Debug */,
+				1BC7B5F02DFA0BF3004E93CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BC7B5EC2DFA0BF3004E93CE /* Build configuration list for PBXNativeTarget "CognetSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC7B5ED2DFA0BF3004E93CE /* Debug */,
+				1BC7B5EE2DFA0BF3004E93CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B0815782DFF3F2100FF6B92 /* XCRemoteSwiftPackageReference "NFCPassportReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndyQ/NFCPassportReader.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B0815792DFF3F2100FF6B92 /* NFCPassportReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B0815782DFF3F2100FF6B92 /* XCRemoteSwiftPackageReference "NFCPassportReader" */;
+			productName = NFCPassportReader;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1BC7B5DB2DFA0BF3004E93CE /* Project object */;
+}

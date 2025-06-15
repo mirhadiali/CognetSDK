@@ -1,0 +1,20 @@
+{
+    "configuration": {
+        "s_SessionTimeout": 60,
+        "onboardingFlow": {
+            "documentEngine": {
+                "passport": false,
+                "idCard": false
+            },
+            "faceEngine": true,
+            "palmEngine": true
+        },
+        "verificationFlow": {
+            "faceEngine": true,
+            "palmEngine": false
+        },
+        "client_priv_cov": null,
+        "backend_pub_cov": null
+    },
+    "isSuccess": true,
+    "message": "SDK Configuration"
