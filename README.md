@@ -51,6 +51,21 @@ public static func createOnboarding(
     ) -> CaptureProcessHomeViewModel
 ```
 
+#### what you get!
+``` swift
+public struct KYCResponse {
+    public let isFaceExist: Bool
+    public let isPalmExist: Bool
+    public let face_Base64: String?
+    public let palm_Base64: String?
+    public let palm_Biometric_Side: String?
+    public let passportResponseDTO: PassportResult?
+    public let idCardResponseDTO: IDCardResult?
+    public var uid: String?
+    
+}
+```
+
 #### Example
 
 ``` swift
