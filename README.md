@@ -21,6 +21,13 @@ CognetSDKManager.shared.initializeSdk() { configurations, errorMessage in
     }
 }
 ```
+### OnBoarding Process
+
+```swift
+CaptureProcessHomeView(vmHome: .createOnboarding(configurations: configs, totalStep: configs.getOnboardingSteps(), state: .onboarding, completion: { response in
+    // Handle response
+}))
+```
 
 ### Biometric Process
 
