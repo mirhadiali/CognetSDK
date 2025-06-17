@@ -17,7 +17,7 @@ protocol DocumentRepositoryProtocol {
 final class DocumentRepository: DocumentRepositoryProtocol {
     private let networkService: NetworkServiceProtocol
     var baseURL: String {
-        let urlString: String = AppEnvironment[.baseURL]
+        let urlString: String = "https://kycdbd.cognetlabs.org"//AppEnvironment[.baseURL]
         return urlString
     }
 
