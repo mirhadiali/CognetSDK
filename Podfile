@@ -7,7 +7,7 @@ target 'CognetSDK' do
   
   # Pods for CognetSDK
   pod 'MediaPipeTasksVision'
-#  pod 'NFCPassportReader' # git:'https://github.com/AndyQ/NFCPassportReader.git'
+  #pod 'NFCPassportReader' # git:'https://github.com/AndyQ/NFCPassportReader.git'
   #pod 'netfox' # git: https://github.com/kasketis/netfox
   
   source 'https://github.com/CocoaPods/Specs.git'

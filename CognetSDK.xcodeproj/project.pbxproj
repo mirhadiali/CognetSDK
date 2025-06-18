@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B08157A2DFF3F2100FF6B92 /* NFCPassportReader in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0815792DFF3F2100FF6B92 /* NFCPassportReader */; };
-		1B08395C2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */; };
-		1B08395D2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B083CCF2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */; };
 		1B083CD02DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B083CD12DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */; };
 		1B083CD22DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BFE214E2E02288F0064A763 /* Pods_CognetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE39CF9698E1B867890F7C02 /* Pods_CognetSDK.framework */; };
+		1BFE214F2E02288F0064A763 /* Pods_CognetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE39CF9698E1B867890F7C02 /* Pods_CognetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +23,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1B083CD02DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Embed Frameworks */,
+				1BFE214F2E02288F0064A763 /* Pods_CognetSDK.framework in Embed Frameworks */,
 				1B083CD22DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Embed Frameworks */,
-				1B08395D2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,9 +35,9 @@
 		1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MediaPipeTasksCommon.xcframework; path = Pods/MediaPipeTasksCommon/frameworks/MediaPipeTasksCommon.xcframework; sourceTree = "<group>"; };
 		1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MediaPipeTasksVision.xcframework; path = Pods/MediaPipeTasksVision/frameworks/MediaPipeTasksVision.xcframework; sourceTree = "<group>"; };
 		1BC7B5E42DFA0BF3004E93CE /* CognetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CognetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A55E8863AA7F07A538A3DE4B /* Pods-CognetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognetSDK.release.xcconfig"; path = "Target Support Files/Pods-CognetSDK/Pods-CognetSDK.release.xcconfig"; sourceTree = "<group>"; };
-		EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CognetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBAF28369957D8CF6243AAB8 /* Pods-CognetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognetSDK.debug.xcconfig"; path = "Target Support Files/Pods-CognetSDK/Pods-CognetSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		727E5A7AD3BAFE35CB883B18 /* Pods-CognetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognetSDK.release.xcconfig"; path = "Target Support Files/Pods-CognetSDK/Pods-CognetSDK.release.xcconfig"; sourceTree = "<group>"; };
+		9134618DE6E81824C3A84BDA /* Pods-CognetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognetSDK.debug.xcconfig"; path = "Target Support Files/Pods-CognetSDK/Pods-CognetSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CE39CF9698E1B867890F7C02 /* Pods_CognetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CognetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -58,10 +57,12 @@
 		1B083CE02DFF582900FF6B92 /* Exceptions for "CognetSDK" folder in "Embed Frameworks" phase from "CognetSDK" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
+				NFCPassportReader.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
 				OpenSSL.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
 			};
 			buildPhase = 1B08085B2DFF382600FF6B92 /* Embed Frameworks */;
 			membershipExceptions = (
+				NFCPassportReader.framework,
 				OpenSSL.framework,
 			);
 		};
@@ -84,10 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B08157A2DFF3F2100FF6B92 /* NFCPassportReader in Frameworks */,
 				1B083CCF2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework in Frameworks */,
 				1B083CD12DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework in Frameworks */,
-				1B08395C2DFF4FFA00FF6B92 /* Pods_CognetSDK.framework in Frameworks */,
+				1BFE214E2E02288F0064A763 /* Pods_CognetSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			children = (
 				1B083CCD2DFF571F00FF6B92 /* MediaPipeTasksCommon.xcframework */,
 				1B083CCE2DFF571F00FF6B92 /* MediaPipeTasksVision.xcframework */,
-				EEDBB192F223F56622D901FD /* Pods_CognetSDK.framework */,
+				CE39CF9698E1B867890F7C02 /* Pods_CognetSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,8 +125,8 @@
 		FD0B26E43E17C08439560977 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FBAF28369957D8CF6243AAB8 /* Pods-CognetSDK.debug.xcconfig */,
-				A55E8863AA7F07A538A3DE4B /* Pods-CognetSDK.release.xcconfig */,
+				9134618DE6E81824C3A84BDA /* Pods-CognetSDK.debug.xcconfig */,
+				727E5A7AD3BAFE35CB883B18 /* Pods-CognetSDK.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BC7B5EC2DFA0BF3004E93CE /* Build configuration list for PBXNativeTarget "CognetSDK" */;
 			buildPhases = (
-				79E3107784967CBBAE23FA62 /* [CP] Check Pods Manifest.lock */,
+				B68BAB009F81AA1D3E409830 /* [CP] Check Pods Manifest.lock */,
 				1BC7B5DF2DFA0BF3004E93CE /* Headers */,
 				1BC7B5E02DFA0BF3004E93CE /* Sources */,
 				1BC7B5E12DFA0BF3004E93CE /* Frameworks */,
@@ -191,7 +191,6 @@
 			mainGroup = 1BC7B5DA2DFA0BF3004E93CE;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1B0815782DFF3F2100FF6B92 /* XCRemoteSwiftPackageReference "NFCPassportReader" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1BC7B5E52DFA0BF3004E93CE /* Products */;
@@ -214,7 +213,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		79E3107784967CBBAE23FA62 /* [CP] Check Pods Manifest.lock */ = {
+		B68BAB009F81AA1D3E409830 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,7 +250,7 @@
 /* Begin XCBuildConfiguration section */
 		1BC7B5ED2DFA0BF3004E93CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBAF28369957D8CF6243AAB8 /* Pods-CognetSDK.debug.xcconfig */;
+			baseConfigurationReference = 9134618DE6E81824C3A84BDA /* Pods-CognetSDK.debug.xcconfig */;
 			buildSettings = {
 				BASE_URL = "https://kycdbd.cognetlabs.org";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -309,7 +308,7 @@
 		};
 		1BC7B5EE2DFA0BF3004E93CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A55E8863AA7F07A538A3DE4B /* Pods-CognetSDK.release.xcconfig */;
+			baseConfigurationReference = 727E5A7AD3BAFE35CB883B18 /* Pods-CognetSDK.release.xcconfig */;
 			buildSettings = {
 				BASE_URL = "https://kycdbd.cognetlabs.org";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -514,25 +513,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1B0815782DFF3F2100FF6B92 /* XCRemoteSwiftPackageReference "NFCPassportReader" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AndyQ/NFCPassportReader.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1B0815792DFF3F2100FF6B92 /* NFCPassportReader */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1B0815782DFF3F2100FF6B92 /* XCRemoteSwiftPackageReference "NFCPassportReader" */;
-			productName = NFCPassportReader;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BC7B5DB2DFA0BF3004E93CE /* Project object */;
 }
