@@ -4,11 +4,7 @@ A Swift framework for biometric authentication and verification processes.
 
 ## Installation
 
-Add the following to your Package.swift:
-
-```swift
-.package(url: "https://github.com/mirhadiali/CognetSDK.git", from: "1.0.0")
-```
+Add the **CognetSDK.XCFramework** file into your project:
 
 # Usage
 
